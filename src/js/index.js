@@ -1,6 +1,5 @@
 const gameOptionsSpots = document.querySelectorAll("[data-options]");
 const startGameBtn = document.querySelector("[data-start-game-btn]");
-import "../css/input.css";
 
 let gameSettings = {};
 

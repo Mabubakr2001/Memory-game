@@ -1,4 +1,3 @@
-import "../css/input.css";
 import { numbers4x4, numbers6x6, svgs4x4, svgs6x6 } from "./config.js";
 const gameSettings = JSON.parse(localStorage.getItem("gameSettings"));
 // All variables that track the game state
