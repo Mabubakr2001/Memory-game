@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+svg {
+  pointer-events: none;
+}
+
+[data-option][data-state="selected"] {
+  background-color: #152938 !important;
+}
+[data-option][data-state="ignored"] {
+  background-color: #bcced9;
+}
+
+[data-start-game-btn][data-state="disabled"] {
+  opacity: 0.7;
+  pointer-events: none;
+}
+[data-start-game-btn][data-state="enabled"] {
+  opacity: 1;
+  pointer-events: all;
+}
+
+[data-grid="4x4"],
+[data-grid="6x6"] {
+  @apply grid gap-3 h-105 w-105 mx-auto;
+}
+
+[data-grid="4x4"] {
+  @apply grid-rows-4 grid-cols-4;
+}
+
+[data-grid="6x6"] {
+  @apply grid-rows-6 grid-cols-6;
+}
+
+.tile {
+  @apply rounded-circle cursor-pointer flex items-center justify-center bg-secondary-2-normal duration-300;
+}
+
+.tile[data-state="empty"] {
+  @apply bg-main-3;
+}
+
+.tile[data-state="filled"] {
+  @apply bg-secondary-2-normal;
+  pointer-events: none;
+}
+
+.tile[data-state="paired"] {
+  @apply bg-secondary-1;
+  pointer-events: none;
+}
+
+[data-item] {
+  @apply text-main-2;
+  font-size: 60px;
+}
+
+[data-player]::after {
+  content: "";
+  background-color: #fda214;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -5px;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  transform: rotate(45deg);
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.mrg-t-40 {
+  margin-top: 40px;
+}
+
+.mrg-t-25 {
+  margin-top: 25px;
+}
+
+[data-player] {
+  @apply duration-300;
+}
+
+[data-player][data-state="active"] {
+  @apply bg-secondary-2-normal text-main-1;
+}
+
+[data-player][data-state="active"]::after {
+  opacity: 1;
+}
+
+[data-player][data-state="disabled"] {
+  @apply bg-main-3 text-main-2;
+}
+
+[data-player][data-state="disabled"]::after {
+  opacity: 0;
+}
+
+[data-overlay] {
+  /* z-index: -1; */
+}
+[data-overlay][data-state="hidden"] {
+  opacity: 0;
+  pointer-events: none;
+}
+[data-overlay][data-state="visible"] {
+  opacity: 0.5;
+  pointer-events: all;
+}
+
+[data-window] {
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.5s;
+}
+
+[data-window][data-state="hidden"] {
+  transform: translate(-50%, -30%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+[data-window][data-state="visible"] {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  pointer-events: all;
+}
