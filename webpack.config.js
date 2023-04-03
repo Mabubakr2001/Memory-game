@@ -5,11 +5,13 @@ module.exports = {
     index: path.resolve(__dirname, "src/js/index.js"),
     insideGame: path.resolve(__dirname, "src/js/insideGame.js"),
   },
+  // mode: "development",
   mode: "production",
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].js",
   },
+  // To deal with loaders
   module: {
     rules: [
       {
