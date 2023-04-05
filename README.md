@@ -17,12 +17,19 @@ Welcome to the Memory Game! This is a simple game created with **HTML**, **CSS**
 ## How to Play?
 
 **1.** Choose the number of players (1, 2, 3, 4).
+
 **2.** Choose the theme (Numbers, Icons).
-**3.** Choose the grid size (4x4, 6x6)
+
+**3.** Choose the grid size (4x4, 6x6).
+
 **4.** Click on any card to flip it over and reveal it.
+
 **5.** Click on another card to also reveal it.
+
 **6.** If the (letters, numbers, icons) on the two cards match, they stay face up.
+
 **7.** If the (letters, numbers, icons) on the two cards do not match, they flip back over.
+
 **8.** Repeat steps 2 to 10 until you have matched all the pairs of cards.
 
 ## Demo
