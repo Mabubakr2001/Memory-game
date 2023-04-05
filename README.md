@@ -26,9 +26,9 @@ Welcome to the Memory Game! This is a simple game created with **HTML**, **CSS**
 
 **5.** Click on another card to also reveal it.
 
-**6.** If the (letters, numbers, icons) on the two cards match, they stay face up.
+**6.** If the (numbers, icons) on the two cards match, they stay face up.
 
-**7.** If the (letters, numbers, icons) on the two cards do not match, they flip back over.
+**7.** If the ( numbers, icons) on the two cards do not match, they flip back over.
 
 **8.** Repeat steps 2 to 10 until you have matched all the pairs of cards.
 
