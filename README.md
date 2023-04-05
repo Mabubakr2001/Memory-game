@@ -51,7 +51,7 @@ If you want to run the game locally on your computer, follow these steps :
 
 **1.** Clone the repository or download the ZIP file.
 
-**2.** Run this command in the terminal to install all needed dependencies, after you check if you're already have **NodeJs** installed.
+**2.** Run this command in the terminal to install all needed dependencies, after you check if you're already have [NodeJs](https://nodejs.org/en) installed.
 
 ```
 npm install
