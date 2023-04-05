@@ -12,7 +12,7 @@ Welcome to the Memory Game! This is a simple game created with **HTML**, **CSS**
 
 - **Customizable Themes :** The game offers a variety of themes to choose from, including numbers, and icons. Players can select their preferred theme to make the game more enjoyable and visually appealing.
 
-- **Single Player Mode :** The game also offers a single player mode, where one player can play with him self with time and number of moves.
+- **Single Player Mode :** The game also offers a single-player mode, where one player can play with himself with time and a number of moves.
 
 ## How to Play?
 
