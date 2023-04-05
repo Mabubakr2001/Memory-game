@@ -4,8 +4,6 @@
 
 Welcome to the Memory Game! This is a simple game created with **HTML**, **CSS**, and **JavaScript**, with a touch of **Tailwind CSS** to style it up. The objective of the game is to match all the pairs of cards.
 
----
-
 ## Features
 
 - **Multiplayer Mode :** The game allows up to 4 players to compete against each other in a race to match all the pairs of cards.
@@ -15,8 +13,6 @@ Welcome to the Memory Game! This is a simple game created with **HTML**, **CSS**
 - **Customizable Themes :** The game offers a variety of themes to choose from, including numbers, letters, and icons. Players can select their preferred theme to make the game more enjoyable and visually appealing.
 
 - **Single Player Mode :** The game also offers a single player mode, where one player can play with him self with time and number of moves.
-
----
 
 ## How to Play?
 
@@ -29,13 +25,9 @@ Welcome to the Memory Game! This is a simple game created with **HTML**, **CSS**
 **7.** If the (letters, numbers, icons) on the two cards do not match, they flip back over.
 **8.** Repeat steps 2 to 10 until you have matched all the pairs of cards.
 
----
-
 ## Demo
 
 You can play the **game online** at <https://memory-game-pk57.onrender.com/>
-
----
 
 ## Credits
 
@@ -45,8 +37,6 @@ This game was created by [Mohamed Aboubakr](https://www.linkedin.com/in/mohamed-
 - CSS
 - JavaScript
 - Tailwind CSS
-
----
 
 ## How to Run Locally?
 
@@ -70,8 +60,6 @@ npm install -g live-server
 ```
 live-server
 ```
-
----
 
 ## Feedback
 
