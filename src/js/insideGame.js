@@ -1,5 +1,6 @@
 import { numbers4x4, numbers6x6, svgs4x4, svgs6x6 } from "./config.js";
 const gameSettings = JSON.parse(localStorage.getItem("gameSettings"));
+
 // All variables that track the game state
 let activePlayer = 1;
 let tileCounter = 0;
@@ -370,7 +371,7 @@ function checkGridState() {
     windowElement = `
     <div
     class="bg-main-1 fixed px-16 py-10 rounded-xl top-2/4 left-2/4"
-    data-window
+    data-window="true"
     data-state="hidden"
   >
     <div>
@@ -673,27 +674,28 @@ document
   .addEventListener("click", () => (window.location.href = "index.html"));
 
 function observeMutationOnTheBody() {
-  const mutationObserver = new MutationObserver((entries) => {
-    // entries is an array of all different mutations that occurred
-    entries.forEach((entry) => {
-      if (entry.type === "childList" && entry.addedNodes.length) {
-        const gameOverWindow = document.querySelector("[data-window]");
-        const restartBtn = gameOverWindow?.querySelector("[data-btn-restart]");
-        const newGameBtn = gameOverWindow?.querySelector("[data-btn-new-game]");
-        if (restartBtn == null || newGameBtn == null) return;
-        restartBtn.addEventListener("click", () => {
-          resetGame();
-          gameOverWindow.dataset.state = "hidden";
-          document.querySelector("[data-overlay]").dataset.state = "hidden";
-          setTimeout(() => {
-            gameOverWindow.remove();
-          }, 1000);
-        });
-        newGameBtn.addEventListener(
-          "click",
-          () => (window.location.href = "index.html")
-        );
-      }
+  const mutationObserver = new MutationObserver((mutations) => {
+    // mutations is an array of all different mutation that occurred
+    mutations.forEach((mutation) => {
+      const gameOverWindow = Array.from(mutation.addedNodes).find(
+        (node) => node.dataset?.window != null
+      );
+      if (gameOverWindow == null) return;
+      const restartBtn = gameOverWindow.querySelector("[data-btn-restart]");
+      const newGameBtn = gameOverWindow.querySelector("[data-btn-new-game]");
+      if (restartBtn == null || newGameBtn == null) return;
+      restartBtn.addEventListener("click", () => {
+        resetGame();
+        gameOverWindow.dataset.state = "hidden";
+        document.querySelector("[data-overlay]").dataset.state = "hidden";
+        setTimeout(() => {
+          gameOverWindow.remove();
+        }, 1000);
+      });
+      newGameBtn.addEventListener(
+        "click",
+        () => (window.location.href = "index.html")
+      );
     });
   });
 
