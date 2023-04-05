@@ -10,7 +10,7 @@ Welcome to the Memory Game! This is a simple game created with **HTML**, **CSS**
 
 - **Customizable Grid Size :** The game allows players to choose between a 4x4 or 6x6 grid size, depending on their preference and skill level.
 
-- **Customizable Themes :** The game offers a variety of themes to choose from, including numbers, letters, and icons. Players can select their preferred theme to make the game more enjoyable and visually appealing.
+- **Customizable Themes :** The game offers a variety of themes to choose from, including numbers, and icons. Players can select their preferred theme to make the game more enjoyable and visually appealing.
 
 - **Single Player Mode :** The game also offers a single player mode, where one player can play with him self with time and number of moves.
 
