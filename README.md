@@ -38,7 +38,7 @@ You can play the **game online** at <https://memory-game-pk57.onrender.com/>
 
 ## Credits
 
-This game was created by [Mohamed Aboubakr](https://www.linkedin.com/in/mohamed-aboubakr-87a982200/ "LinkedIn account"). It uses the following technologies:
+This game was created with love by [Mohamed Aboubakr](https://www.linkedin.com/in/mohamed-aboubakr-87a982200/ "LinkedIn account"). It uses the following technologies:
 
 - HTML
 - CSS
