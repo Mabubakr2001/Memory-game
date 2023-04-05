@@ -57,7 +57,7 @@ If you want to run the game locally on your computer, follow these steps :
 npm install
 ```
 
-**3.** Then run this command to install the **live server** if you don't have the extension on **VScode**.
+**3.** Then run this command to install the **live server** if you don't have the extension on [Visual Studio Code](https://code.visualstudio.com/).
 
 ```
 npm install -g live-server
