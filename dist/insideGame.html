@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" defer src="./js/insideGame.js"></script>
+    <title>Memory game</title>
+  </head>
+  <body class="font-semibold bg-main-2 relative">
+    <header
+      class="flex w-3/4 mx-auto justify-between mt-4 mb-6 text-main-1 items-center"
+    >
+      <h3 class="text-3xl text-main-1">Memory game</h3>
+      <div>
+        <button
+          class="mr-3 rounded-3xl bg-secondary-2-normal w-40 h-12 text-2xl hover:bg-secondary-2-hov duration-200"
+          data-btn-restart
+        >
+          Restart
+        </button>
+        <button
+          class="h-12 text-2xl bg-secondary-3 rounded-3xl w-40 text-main-2 hover:bg-secondary-1 hover:text-main-1 duration-200"
+          data-btn-new-game
+        >
+          New game
+        </button>
+      </div>
+    </header>
+    <div
+      class="fixed top-0 left-0 w-full h-full bg-main-2 duration-200 delay-500"
+      data-overlay
+      data-state="hidden"
+    ></div>
+    <!-- <div
+      class="bg-main-1 fixed px-16 py-10 rounded-xl top-2/4 left-2/4"
+      data-window
+      data-state="hidden"
+    >
+      <div>
+        <h2 class="text-main-2 text-5xl text-center mb-2">Player 3 wins!</h2>
+        <p class="text-xl text-center text-secondary-1 mb-2">
+          Game over! Here are the results...
+        </p>
+      </div>
+      <div>
+        <div
+          class="flex justify-between items-center mb-4 rounded-md py-3 px-6 bg-main-2 text-main-1 text-2xl"
+        >
+          <p>Player 2 (Winner!)</p>
+          <span>5 pairs</span>
+        </div>
+        <div
+          class="flex justify-between items-center mb-4 rounded-md py-3 px-6 bg-main-2 text-main-1 text-2xl"
+        >
+          <p>Player 1</p>
+          <span>3 pairs</span>
+        </div>
+      </div>
+      <div class="flex">
+        <button
+          class="w-1/2 text-main-1 bg-secondary-2-normal text-xl rounded-2xl h-11 mr-3 hover:bg-secondary-2-hov duration-200"
+          data-btn-restart
+        >
+          Restart
+        </button>
+        <button
+          class="w-1/2 h-11 rounded-2xl text-xl text-main-2 bg-main-3 hover:bg-secondary-1 hover:text-main-1 duration-200"
+          data-btn-new-game
+        >
+          Setup new game
+        </button>
+      </div>
+    </div> -->
+  </body>
+</html>
